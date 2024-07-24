@@ -2,11 +2,11 @@
 
 // const Canvas1 = (props) => <canvas {...props} />;
 
-export default function Canvas1() {
+export default function Canvas3() {
   return (
     <div className="canvas-sections">
       <h1>Testing</h1>
-      <div className="canvas-and-p1">
+      <div className="canvas-and-p3">
         <canvas className="canvas"></canvas>
         <p className="text-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
