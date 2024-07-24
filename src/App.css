@@ -1,6 +1,116 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: sans-serif;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid black;
+  padding: 5px;
+  height: 100px;
+  align-items: center;
+}
+
+.logobox {
+  display: flex;
+  flex: 1;
+  height: 95%;
+}
+
+.nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-heading {
+  flex: 1;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.navlist {
+  display: flex;
+
+  list-style-type: none;
+  gap: 5px;
+}
+
+.navlist li a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px;
+  background-color: papayawhip;
+  border-radius: 10px;
+}
+
+.navlist li a:hover {
+  background-color: white;
+}
+
+/* ----------------------Canvas styles------------------------- */
+
+.canvas-sections {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid grey;
+  border-radius: 13px;
+}
+
+.canvas-sections h1 {
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+.canvas-and-p1 {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+
+.canvas-and-p2 {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.canvas-and-p3 {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+
+.canvas-and-p4 {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.canvas {
+  height: 400px;
+  background-color: papayawhip;
+}
+
+.text-content {
 }
