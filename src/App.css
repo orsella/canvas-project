@@ -123,3 +123,9 @@
   /* border: 3px solid black; */
   border-radius: 15px;
 }
+
+.codepen-div {
+  /* height: 600px; */
+  padding: 20px;
+  overflow: none;
+}

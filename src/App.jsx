@@ -6,6 +6,9 @@ import Canvas2 from "./components/Canvas2";
 import Canvas3 from "./components/Canvas3";
 import Canvas4 from "./components/Canvas4";
 import Canvas5 from "./components/Canvas5";
+import Canvas6 from "./components/Canvas6";
+import Canvas7 from "./components/Canvas7";
+import Canvas8 from "./components/Canvas8";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Canvas3></Canvas3>
         <Canvas4></Canvas4>
         <Canvas5></Canvas5>
+        <Canvas6></Canvas6>
+        <Canvas7></Canvas7>
+        <Canvas8></Canvas8>
       </main>
     </body>
   );
