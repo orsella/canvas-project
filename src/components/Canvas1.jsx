@@ -1,13 +1,26 @@
-// import React from "react";
+import { useEffect, useRef } from "react";
 
-// const Canvas1 = (props) => <canvas {...props} />;
+export default function Canvas2() {
+  const canvasRef = useRef(null);
 
-export default function Canvas1() {
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (canvas.getContext) {
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "rgb(200, 0, 0)";
+      ctx.fillRect(10, 10, 50, 50);
+
+      ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+      ctx.fillRect(30, 30, 50, 50);
+    }
+  }, []);
+
   return (
     <div className="canvas-sections">
       <h1>Testing</h1>
       <div className="canvas-and-p1">
-        <canvas className="canvas"></canvas>
+        <canvas ref={canvasRef} className="canvas"></canvas>
         <p className="text-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           bibendum dignissim orci id venenatis. Vestibulum imperdiet augue
