@@ -1,7 +1,3 @@
-// import React from "react";
-
-// const Canvas1 = (props) => <canvas {...props} />;
-
 export default function Canvas2() {
   return (
     <div className="canvas-sections">
