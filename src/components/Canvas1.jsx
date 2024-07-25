@@ -8,11 +8,19 @@ export default function Canvas1() {
     if (canvas.getContext) {
       const ctx = canvas.getContext("2d");
 
-      ctx.fillStyle = "rgb(200, 0, 0)";
-      ctx.fillRect(10, 10, 50, 50);
+      canvas.width = 500;
+      canvas.height = 300;
 
-      ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-      ctx.fillRect(30, 30, 50, 50);
+      ctx.fillStyle = "rgb(0, 0, 255)";
+      ctx.fillRect(10, 10, 150, 150);
+
+      ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
+      ctx.fillRect(85, 85, 150, 150);
+
+      ctx.fillStyle = "black";
+      ctx.fillRect(290, 25, 160, 160);
+      ctx.clearRect(310, 45, 120, 120);
+      ctx.strokeRect(315, 50, 110, 110);
     }
   }, []);
 
