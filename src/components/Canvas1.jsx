@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function Canvas2() {
+export default function Canvas1() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
