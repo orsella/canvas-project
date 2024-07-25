@@ -117,3 +117,9 @@
 
 .text-content {
 }
+
+#circles {
+  background-color: white;
+  /* border: 3px solid black; */
+  border-radius: 15px;
+}
