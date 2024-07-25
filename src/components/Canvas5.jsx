@@ -1,25 +1,45 @@
 import { useEffect, useRef } from "react";
 
-export default function Canvas3() {
+export default function Canvas5() {
   const canvasRef = useRef(null);
 
-  const drawCircles = (ctx, canvas) => {
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas before drawing
-    for (let i = 0; i < 80; i++) {
-      let x = Math.random() * 500;
-      let y = Math.random() * 300;
-      let red = Math.random() * 255;
-      let blue = Math.random() * 255;
-      let green = Math.random() * 255;
-      let radius = Math.random() * 20;
+  const animateBall = (ctx, canvas) => {
+    let xc = Math.random() * canvas.width; // x coordinate
+    let yc = Math.random() * canvas.height; // y coordinate
+    let dx = (Math.random() - 0.5) * 5; // velocity of x movement
+    let dy = (Math.random() - 0.5) * 5; // velocity of y movement
+    const radius = 35;
 
+    let currentColor = "white"; // Initial color
+
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.beginPath();
-      ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-      ctx.strokeStyle = `rgba(${red}, ${blue}, ${green}, 0.8)`;
-      ctx.stroke();
-      ctx.fillStyle = `rgba(${red}, ${blue}, ${green}, 0.8)`;
+      ctx.arc(xc, yc, radius, 0, Math.PI * 2, false);
+      ctx.strokeStyle = "black";
+      ctx.fillStyle = currentColor;
       ctx.fill();
+      ctx.stroke();
+
+      if (xc + radius > canvas.width || xc - radius < 0) {
+        currentColor = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${
+          Math.random() * 255
+        }, 0.8)`;
+        dx = -dx;
+      }
+      if (yc + radius > canvas.height || yc - radius < 0) {
+        currentColor = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${
+          Math.random() * 255
+        }, 0.8)`;
+        dy = -dy;
+      }
+
+      xc += dx;
+      yc += dy;
     }
+
+    animate();
   };
 
   useEffect(() => {
@@ -30,25 +50,15 @@ export default function Canvas3() {
       canvas.width = 500;
       canvas.height = 300;
 
-      drawCircles(ctx, canvas);
-
-      const handleClick = () => {
-        drawCircles(ctx, canvas);
-      };
-
-      canvas.addEventListener("click", handleClick);
-
-      return () => {
-        canvas.removeEventListener("click", handleClick);
-      };
+      animateBall(ctx, canvas);
     }
   }, []);
 
   return (
     <div className="canvas-sections">
-      <h1>Random Circles</h1>
+      <h1>Bouncy Ball</h1>
       <div className="canvas-and-p3">
-        <canvas ref={canvasRef} className="canvas" id="circles"></canvas>
+        <canvas ref={canvasRef} className="canvas" id="bouncy"></canvas>
         <p className="text-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           bibendum dignissim orci id venenatis. Vestibulum imperdiet augue
