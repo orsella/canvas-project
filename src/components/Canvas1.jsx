@@ -26,7 +26,7 @@ export default function Canvas1() {
 
   return (
     <div className="canvas-sections">
-      <h1>Testing</h1>
+      <h1>Drawing Simple Shapes</h1>
       <div className="canvas-and-p1">
         <canvas ref={canvasRef} className="canvas"></canvas>
         <p className="text-content">
