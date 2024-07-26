@@ -6,7 +6,7 @@ export default function Header() {
       </div>
       <h1 className="main-heading">HTML Canvas Showcase</h1>
       <nav className="nav">
-        <ul className="navlist">
+        {/* <ul className="navlist">
           <li>
             <a href="" className="navlinks">
               Home
@@ -27,7 +27,7 @@ export default function Header() {
               Canvas 3
             </a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </div>
   );

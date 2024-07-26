@@ -46,23 +46,20 @@ export default function Canvas3() {
 
   return (
     <div className="canvas-sections">
-      <h1>Random Circles</h1>
+      <h1 className="box-headings">Random Circles</h1>
       <div className="canvas-and-p3">
         <canvas ref={canvasRef} className="canvas" id="circles"></canvas>
         <p className="text-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          bibendum dignissim orci id venenatis. Vestibulum imperdiet augue
-          metus, sit amet commodo ipsum aliquam sed. Curabitur mattis, nibh in
-          blandit feugiat, ligula tellus vestibulum nulla, a auctor est dolor
-          pulvinar diam. Nam augue lacus, ultricies vitae lacus ut, tristique
-          varius augue. In sapien enim, convallis sed viverra sed, ornare ut
-          ante. Duis vitae est pellentesque, vulputate nulla non, efficitur
-          dolor. Integer laoreet libero ac erat fermentum mollis. Vivamus sit
-          amet quam sit amet ligula aliquam rhoncus eget at orci. Suspendisse
-          sed dui auctor, posuere erat nec, ultricies elit. Maecenas vehicula
-          semper sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Praesent vehicula nisl interdum, viverra mauris eget, lobortis
-          odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          **Drawing Circles**: Each time the canvas is clicked, the function
+          draws 80 circles at random positions on the canvas.
+          <br />
+          <br />
+          **Random Attributes**: Each circle has a random position, radius, and
+          color, each click generates a unique pattern.
+          <br />
+          <br />
+          **Interactivity**: Clicking on the canvas triggers the drawing
+          function, creating a new set of random circles each time.
         </p>
       </div>
     </div>

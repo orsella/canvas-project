@@ -39,7 +39,7 @@ export default function Canvas4() {
 
   return (
     <div className="canvas-sections">
-      <h1>Simple Animation</h1>
+      <h1 className="box-headings">Simple Animation</h1>
       <div className="canvas-and-p4">
         <canvas ref={canvasRef} className="canvas"></canvas>
         <p className="text-content">
