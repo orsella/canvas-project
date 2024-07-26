@@ -43,7 +43,7 @@ export default function Canvas2() {
   }, []);
   return (
     <div className="canvas-sections">
-      <h1>Drawing Lines And Arcs</h1>
+      <h1 className="box-headings">Drawing Lines And Arcs</h1>
       <div className="canvas-and-p2">
         <canvas ref={canvasRef} className="canvas"></canvas>
         <p className="text-content">
