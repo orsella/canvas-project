@@ -44,8 +44,10 @@ export default function Canvas4() {
         <canvas ref={canvasRef} className="canvas"></canvas>
         <p className="text-content">
           For simple line animation:<br></br>
+          <br></br>
           setLineDash used to declare length of dashes in px and the gap between
           them, used in combination with strokeRect<br></br>
+          <br></br>
           the starting point of the dashes is moved a set amount and then the
           shape is drawn again set to the rate of the timer
         </p>

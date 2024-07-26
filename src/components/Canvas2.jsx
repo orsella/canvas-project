@@ -48,11 +48,15 @@ export default function Canvas2() {
         <canvas ref={canvasRef} className="canvas"></canvas>
         <p className="text-content">
           To draw lines/arcs: <br></br>
+          <br></br>
           beginPath method used to start a path/reset path<br></br>
+          <br></br>
           arc method creates a arc centered at the given x and y position, you
           declare the radius, as well as the starting and ending angle (Math.PI
           * 2 for a circle)<br></br>
+          <br></br>
           Can also declare true or false to set the rotation of the circle
+          <br></br>
           <br></br>
           moveTo moves to the next drawing position with drawing anything
         </p>
