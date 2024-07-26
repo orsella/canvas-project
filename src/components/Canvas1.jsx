@@ -30,19 +30,13 @@ export default function Canvas1() {
       <div className="canvas-and-p1">
         <canvas ref={canvasRef} className="canvas"></canvas>
         <p className="text-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          bibendum dignissim orci id venenatis. Vestibulum imperdiet augue
-          metus, sit amet commodo ipsum aliquam sed. Curabitur mattis, nibh in
-          blandit feugiat, ligula tellus vestibulum nulla, a auctor est dolor
-          pulvinar diam. Nam augue lacus, ultricies vitae lacus ut, tristique
-          varius augue. In sapien enim, convallis sed viverra sed, ornare ut
-          ante. Duis vitae est pellentesque, vulputate nulla non, efficitur
-          dolor. Integer laoreet libero ac erat fermentum mollis. Vivamus sit
-          amet quam sit amet ligula aliquam rhoncus eget at orci. Suspendisse
-          sed dui auctor, posuere erat nec, ultricies elit. Maecenas vehicula
-          semper sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Praesent vehicula nisl interdum, viverra mauris eget, lobortis
-          odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          To make a simple rectangle: <br></br> fillRect method draws a filled
+          rectangle where you declare the x and y starting position and then
+          specify the width and height<br></br> fillStyle is used to set the
+          colour of the rectangle<br></br>
+          clearRect uses the same co-ordinated as fillRect, this creates a hole
+          in the rectangle<br></br> strokeRect draws the line of a rectangle
+          with no fill
         </p>
       </div>
     </div>

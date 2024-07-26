@@ -47,19 +47,14 @@ export default function Canvas2() {
       <div className="canvas-and-p2">
         <canvas ref={canvasRef} className="canvas"></canvas>
         <p className="text-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          bibendum dignissim orci id venenatis. Vestibulum imperdiet augue
-          metus, sit amet commodo ipsum aliquam sed. Curabitur mattis, nibh in
-          blandit feugiat, ligula tellus vestibulum nulla, a auctor est dolor
-          pulvinar diam. Nam augue lacus, ultricies vitae lacus ut, tristique
-          varius augue. In sapien enim, convallis sed viverra sed, ornare ut
-          ante. Duis vitae est pellentesque, vulputate nulla non, efficitur
-          dolor. Integer laoreet libero ac erat fermentum mollis. Vivamus sit
-          amet quam sit amet ligula aliquam rhoncus eget at orci. Suspendisse
-          sed dui auctor, posuere erat nec, ultricies elit. Maecenas vehicula
-          semper sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Praesent vehicula nisl interdum, viverra mauris eget, lobortis
-          odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          To draw lines/arcs: <br></br>
+          beginPath method used to start a path/reset path<br></br>
+          arc method creates a arc centered at the given x and y position, you
+          declare the radius, as well as the starting and ending angle (Math.PI
+          * 2 for a circle)<br></br>
+          Can also declare true or false to set the rotation of the circle
+          <br></br>
+          moveTo moves to the next drawing position with drawing anything
         </p>
       </div>
     </div>
